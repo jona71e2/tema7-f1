@@ -6,17 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>F1 Grid</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="logo/favicon-16x16.png">
 </head>
 
 <body>
-
+    <div class="logo"><img src="logo/Logo.svg"> </div>
+    <h1>Drivers</h1>
+    <nav>
+        <button class="filter" data-kategori="alle">Alle</button>
+        <button class="filter" data-kategori="team">Team</button>
+        <button class="filter" data-kategori="land">Land</button>
+        <button class="filter" data-kategori="sejre">Sejre</button>
+        <button class="filter" data-kategori="løb">Løb</button>
+        <button class="filter" data-kategori="point">Point</button>
+    </nav>
     <section id="data-container"></section>
 
     <template>
         <article>
-            <h2></h2>
-            <img src="" alt="">
-            <img src="" alt="">
+            <div class="justify">
+                <h2></h2>
+                <img class="flag" src="" alt="">
+            </div>
+            <img class="profil-billede" src="" alt="">
             <h3></h3>
         </article>
     </template>
@@ -28,6 +40,7 @@
             <img class="driver" src="" alt="">
 
             <div>
+                <img src="" alt="" class="profil-billede">
                 <h2 class="navn">Navn</h2>
                 <img class="flag" src="" alt="">
                 <h3 class="team">Team</h3>
@@ -55,6 +68,4 @@
 
 
     <script src="script.js"></script>
-</body>
-
-</html>
+</body></html>
