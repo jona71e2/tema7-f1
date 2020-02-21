@@ -1,9 +1,22 @@
+* {
+    font-family: kandin, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .hide {
     display: none;
 }
 
 img {
     width: 100%;
+}
+
+p {
+    font-family: kandin, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5rem;
 }
 
 #data-container {
@@ -81,6 +94,22 @@ button {
 
 }
 
+article h2 {
+    font-family: orbitron, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: .08rem;
+    font-size: 1.35rem;
+}
+
+article h3,
+h4 {
+    font-size: 1.5rem;
+    font-family: orbitron, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
 #detalje {
     position: fixed;
     top: 0;
@@ -106,6 +135,13 @@ button {
 
 #detalje img {
     width: 100%;
+}
+
+li {
+    list-style-type: none;
+    font-family: kandin, sans-serif;
+    font-weight: 900;
+    font-style: normal;
 }
 
 @media only screen and (max-width: 1200px) {

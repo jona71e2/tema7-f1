@@ -48,19 +48,19 @@
             const personerTemplate = document.querySelector("template");
             container.innerHTML = "";
 
+
             personer.feed.entry.forEach(person => {
                 if (filter == "alle" || filter == person.gsx$kategori.$t) {
+
                     let klon = personerTemplate.cloneNode(true).content;
                     klon.querySelector("h2").textContent = `${person.gsx$navn.$t}`;
                     klon.querySelector(".flag").src = "billeder/flag/" + person.gsx$land.$t + ".jpg";
                     klon.querySelector(".profil-billede").src = "billeder/drivers/" + person.gsx$billede.$t;
-                    klon.querySelector("h3").textContent = `${person.gsx$team.$t}`;
+                    klon.querySelector("h3").textContent = `${person.gsx$kategori.$t}`;
                     klon.querySelector("article").addEventListener("click", () => visDetalje(person));
 
                     container.appendChild(klon);
 
-                    //link til indsætte billede
-                    //klon.querySelector("img").src = "images/small/" + ret.gsx$billede.$t + "-sm.jpg";
 
                 }
 
@@ -69,16 +69,18 @@
 
         function visDetalje(person) {
             detalje.classList.remove("hide");
-            detalje.querySelector("button").addEventListener("click", () => detalje.classList.add("skjul"));
+            detalje.querySelector("button").addEventListener("click", () => detalje.classList.add("hide"));
             console.log(person.gsx$navn.$t);
 
-
-            detalje.querySelector(".navn").textContent = person.gsx$navn.$t;
-            detalje.querySelector(".navn").textContent += " - " + person.gsx$pris.$t + " dkk,-";
             detalje.querySelector("img").src = "billeder/drivers/" + person.gsx$billede.$t;
-            detalje.querySelector("p:nth-child(2)").textContent = `Kategori: ${person.gsx$kategori.$t}`;
-            detalje.querySelector("p:nth-child(3)").textContent = `Oprindelse: Retten stammer originalt fra ${person.gsx$oprindelse.$t}`;
-            detalje.querySelector("p:nth-child(4)").textContent = `Beskrivelse: ${person.gsx$lang.$t}`;
+            detalje.querySelector("h2").textContent = `${person.gsx$navn.$t}`;
+            detalje.querySelector("h3").textContent = `${person.gsx$kategori.$t}`;
+            detalje.querySelector("li").textContent = `Løb: ${person.gsx$starter.$t}`;
+            detalje.querySelector("li:nth-child(2)").textContent = `Podier: ${person.gsx$podier.$t}`;
+            detalje.querySelector("li:nth-child(3)").textContent = `Sejre: ${person.gsx$sejre.$t}`;
+            detalje.querySelector("li:nth-child(4)").textContent = `Point: ${person.gsx$points.$t}`;
+            detalje.querySelector("li:nth-child(5)").textContent = `VM: ${person.gsx$verdensmesterskaber.$t}`;
+            detalje.querySelector("p").textContent = `${person.gsx$bio.$t}`;
 
 
 

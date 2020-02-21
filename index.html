@@ -7,6 +7,9 @@
     <title>F1 Grid</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" sizes="16x16" href="logo/favicon-16x16.png">
+    <link rel="stylesheet" href="https://use.typekit.net/gam5rkh.css">
+    <link rel="stylesheet" href="https://use.typekit.net/aih2pca.css">
+
 </head>
 
 <body>
@@ -14,11 +17,16 @@
     <h1>Drivers</h1>
     <nav>
         <button class="filter" data-kategori="alle">Alle</button>
-        <button class="filter" data-kategori="team">Team</button>
-        <button class="filter" data-kategori="land">Land</button>
-        <button class="filter" data-kategori="sejre">Sejre</button>
-        <button class="filter" data-kategori="løb">Løb</button>
-        <button class="filter" data-kategori="point">Point</button>
+        <button class="filter" data-kategori="Mercedes AMG">Mercedes AMG</button>
+        <button class="filter" data-kategori="Ferrari">Ferrari</button>
+        <button class="filter" data-kategori="Red Bull">Redbull</button>
+        <button class="filter" data-kategori="Mclaren">Mclaren</button>
+        <button class="filter" data-kategori="Renault">Renault</button>
+        <button class="filter" data-kategori="Alpha Tauri">Alpha Tauri</button>
+        <button class="filter" data-kategori="Racing Point">Racing Point</button>
+        <button class="filter" data-kategori="Alfa Romeo Racing">Alfa Romeo</button>
+        <button class="filter" data-kategori="Haas">Haas</button>
+        <button class="filter" data-kategori="Williams Racing">Williams</button>
     </nav>
     <section id="data-container"></section>
 
@@ -33,9 +41,9 @@
         </article>
     </template>
 
-    <section id="detail" class="hide">
-        <button id="detail_close">X</button>
-        <article id="person_detail">
+    <section id="detalje" class="hide">
+        <button id="detalje_close">X</button>
+        <article id="person_detalje">
 
             <img class="driver" src="" alt="">
 
@@ -43,7 +51,7 @@
                 <img src="" alt="" class="profil-billede">
                 <h2 class="navn">Navn</h2>
                 <img class="flag" src="" alt="">
-                <h3 class="team">Team</h3>
+                <h3 class="kategori">Team</h3>
 
                 <h4 class="stats">Stats</h4>
                 <ul>
@@ -68,4 +76,6 @@
 
 
     <script src="script.js"></script>
-</body></html>
+</body>
+
+</html>
