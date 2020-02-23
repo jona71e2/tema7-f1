@@ -54,7 +54,8 @@
 
                     let klon = personerTemplate.cloneNode(true).content;
                     klon.querySelector("h2").textContent = `${person.gsx$navn.$t}`;
-                    klon.querySelector(".flag").src = "billeder/flag/" + person.gsx$land.$t + ".jpg";
+                    //klon.querySelector(".flag").src = "billeder/flag/" + person.gsx$land.$t + ".jpg";
+                    klon.querySelector(".flag").src = "billeder/flag/" + person.gsx$land.$t + ".svg";
                     klon.querySelector(".profil-billede").src = "billeder/drivers/" + person.gsx$billede.$t;
                     klon.querySelector("h3").textContent = `${person.gsx$kategori.$t}`;
                     klon.querySelector("article").addEventListener("click", () => visDetalje(person));
