@@ -58,7 +58,8 @@
                     klon.querySelector(".flag").src = "billeder/flag/" + person.gsx$land.$t + ".svg";
                     klon.querySelector(".profil-billede").src = "billeder/drivers/" + person.gsx$billede.$t;
                     klon.querySelector("h3").textContent = `${person.gsx$kategori.$t}`;
-                    klon.querySelector("article").style.color = `#${person.gsx$farver.$t}`;
+                    klon.querySelector("article").style.borderBottom = `solid 5px #${person.gsx$farver.$t}`;
+                    klon.querySelector("article").style.borderRight = `solid 5px #${person.gsx$farver.$t}`;
                     klon.querySelector("article").addEventListener("click", () => visDetalje(person));
 
                     container.appendChild(klon);
