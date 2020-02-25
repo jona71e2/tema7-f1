@@ -25,7 +25,8 @@ p {
     padding: 10px;
     background: #ececec;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    /*    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));*/
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     grid-gap: 10px;
 }
 
@@ -49,6 +50,10 @@ article {
     box-shadow: 0px 10px 15px 5px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     border-radius: 5%;
+}
+
+#person_detalje {
+    padding: 0;
 }
 
 article:hover {
@@ -244,7 +249,22 @@ li {
 
     #detalje .facts {
         grid-column: 3/5;
+        /*
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+*/
     }
+
+    #detalje .h2 {
+        grid-column: 1/4;
+    }
+
+    #detalje .flag {
+        width: 20%;
+
+        grid-column: 4/5;
+    }
+
 
     #detalje .bio_text {
         grid-column: 1/5;

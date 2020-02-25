@@ -76,6 +76,7 @@
             console.log(person.gsx$navn.$t);
 
             detalje.querySelector("img").src = "billeder/drivers/" + person.gsx$billede.$t;
+            detalje.querySelector(".flag").src = "billeder/flag/" + person.gsx$land.$t + ".svg";
             detalje.querySelector("h2").textContent = `${person.gsx$navn.$t}`;
             detalje.querySelector("h3").textContent = `${person.gsx$kategori.$t}`;
             detalje.querySelector("li").textContent = `Løb: ${person.gsx$starter.$t}`;
