@@ -26,7 +26,7 @@ p {
     background: #ececec;
     display: grid;
     /*    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));*/
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 10px;
 }
 
@@ -61,17 +61,54 @@ article:hover {
     transform: scale(1.02);
 }
 
-.flag {
-    object-fit: contain;
-    width: 50px;
-    height: auto;
-
-}
 
 .justify {
     justify-content: space-between;
     display: flex;
+    margin-top: 10px;
+
+
+
 }
+
+#fornavn {
+    font-family: orbitron, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: .08rem;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    margin-bottom: 0px;
+
+
+}
+
+#efternavn {
+    font-family: orbitron, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: .08rem;
+    font-size: 1.8rem;
+    margin-top: 10px;
+
+
+}
+
+.flag {
+    object-fit: contain;
+    width: 70px;
+    height: auto;
+    margin: 5px 5px 0 0;
+
+
+
+
+
+}
+
+
+
+
 
 
 nav {
@@ -117,6 +154,7 @@ button {
 
 }
 
+/*
 article h2 {
     font-family: orbitron, sans-serif;
     font-weight: 900;
@@ -124,6 +162,9 @@ article h2 {
     letter-spacing: .08rem;
     font-size: 1.35rem;
 }
+*/
+
+
 
 article h3,
 h4 {
@@ -171,10 +212,12 @@ li {
 
 
 @media only screen and (max-width: 1200px) {
+    /*
     #detalje article {
         margin: 0 6em;
         padding: 2em 4em;
     }
+*/
 
 
 
@@ -223,7 +266,20 @@ li {
 }
 */
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 750px) {
+    #data-container {
+        max-width: 750px;
+        margin: 0 auto;
+        padding: 10px;
+        background: #ececec;
+        display: grid;
+        /*    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));*/
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-gap: 10px;
+    }
+
+
+    /*
     nav {
         display: flex;
         flex-wrap: wrap;
@@ -249,10 +305,10 @@ li {
 
     #detalje .facts {
         grid-column: 3/5;
-        /*
+
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-*/
+
     }
 
     #detalje .h2 {
@@ -270,8 +326,24 @@ li {
         grid-column: 1/5;
 
     }
+*/
 
 
 
+
+}
+
+
+@media only screen and (min-width: 1300px) {
+    #data-container {
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 10px;
+        background: #ececec;
+        display: grid;
+        /*    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));*/
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-gap: 10px;
+    }
 
 }

@@ -53,7 +53,8 @@
                 if (filter == "alle" || filter == person.gsx$kategori.$t) {
 
                     let klon = personerTemplate.cloneNode(true).content;
-                    klon.querySelector("h2").textContent = `${person.gsx$navn.$t}`;
+                    klon.querySelector("#fornavn").textContent = `${person.gsx$fornavn.$t}`;
+                    klon.querySelector("#efternavn").textContent = `${person.gsx$efternavn.$t}`;
                     //klon.querySelector(".flag").src = "billeder/flag/" + person.gsx$land.$t + ".jpg";
                     klon.querySelector(".flag").src = "billeder/flag/" + person.gsx$land.$t + ".svg";
                     klon.querySelector(".profil-billede").src = "billeder/drivers/" + person.gsx$billede.$t;
