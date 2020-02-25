@@ -74,11 +74,14 @@
         function visDetalje(person) {
             detalje.classList.remove("hide");
             detalje.querySelector("button").addEventListener("click", () => detalje.classList.add("hide"));
-            console.log(person.gsx$navn.$t);
+            console.log(person.gsx$fornavn.$t);
+            console.log(person.gsx$efternavn.$t);
 
-            detalje.querySelector("img").src = "billeder/drivers/" + person.gsx$billede.$t;
+            //            detalje.querySelector(".profil-billede").src = "billeder/drivers/" + person.gsx$billede.$t;
             detalje.querySelector(".flag").src = "billeder/flag/" + person.gsx$land.$t + ".svg";
-            detalje.querySelector("h2").textContent = `${person.gsx$navn.$t}`;
+            detalje.querySelector("#fornavn_detalje").textContent = `${person.gsx$fornavn.$t}`;
+            detalje.querySelector("#efternavn_detalje").textContent = `${person.gsx$efternavn.$t}`;
+            detalje.querySelector(".profil-billede").src = "billeder/drivers/" + person.gsx$billede.$t;
             detalje.querySelector("h3").textContent = `${person.gsx$kategori.$t}`;
             detalje.querySelector("li").textContent = `Løb: ${person.gsx$starter.$t}`;
             detalje.querySelector("li:nth-child(2)").textContent = `Podier: ${person.gsx$podier.$t}`;

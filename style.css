@@ -44,19 +44,25 @@ p {
     max-width: 250px;
 }
 
+/*
 article {
-    /*    border: 1px solid #000;*/
+    border: 1px solid #000;
+    padding: 10px;
+    box-shadow: 0px 10px 15px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    border-radius: 5%;
+}
+*/
+
+.loop_view {
     padding: 10px;
     box-shadow: 0px 10px 15px 5px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     border-radius: 5%;
 }
 
-#person_detalje {
-    padding: 0;
-}
 
-article:hover {
+.loop_view:hover {
     transition: .5s ease-in-out;
     transform: scale(1.02);
 }
@@ -100,9 +106,53 @@ article:hover {
     height: auto;
     margin: 5px 5px 0 0;
 
+}
+
+
+/*Detalje view Styling*/
+
+.detalje_container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
 
 
 
+}
+
+.navn_detalje {
+    margin-left: 10px;
+}
+
+#fornavn_detalje {
+    font-family: orbitron, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: .08rem;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    text-align: left;
+
+
+}
+
+#efternavn_detalje {
+    font-family: orbitron, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: .08rem;
+    font-size: 1.8rem;
+    margin-top: 10px;
+
+
+}
+
+#flag_detalje {
+    object-fit: contain;
+    width: 70px;
+    height: auto;
+    margin: 5px 5px 0 0;
 
 }
 
@@ -189,8 +239,12 @@ h4 {
 }
 
 #detalje article {
-    margin: 0 6em;
+
+    /*
+    margin: 0 6px;
     padding: 2em 10em;
+*/
+
     background-color: white;
     cursor: pointer;
     justify-content: center;
@@ -198,7 +252,7 @@ h4 {
 }
 
 #detalje img {
-    width: 100%;
+    width: 70%;
 }
 
 li {
@@ -335,6 +389,8 @@ li {
 
 
 @media only screen and (min-width: 1300px) {
+
+
     #data-container {
         max-width: 1300px;
         margin: 0 auto;
@@ -345,5 +401,15 @@ li {
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         grid-gap: 10px;
     }
+
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
 
 }
