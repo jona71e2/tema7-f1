@@ -262,7 +262,8 @@ li {
 .navbar {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+
+    align-items: center;
     overflow: hidden;
 
 
@@ -293,6 +294,7 @@ li {
     border-top: 0;
     text-decoration: none;
     border: 0;
+
 }
 
 .navbar a:hover,
@@ -307,6 +309,16 @@ li {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+
+
+}
+
+.dropdown-content button {
+    margin: 0.5rem;
+    border-right: solid;
+    font-size: 1.2rem;
+    font-weight: 400;
+
 }
 
 .dropdown-content a {
@@ -316,6 +328,7 @@ li {
     text-decoration: none;
     display: block;
     text-align: left;
+
 }
 
 .dropdown-content a:hover {
@@ -499,6 +512,7 @@ li {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
+        align-items: none;
         justify-content: space-evenly;
 
     }
