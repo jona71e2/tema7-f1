@@ -16,6 +16,7 @@
 
 <body>
 
+    <!--   Navigationsstruktur-->
     <div class="navbar">
         <div>
             <div class="logo">
@@ -60,23 +61,11 @@
         </div>
     </div>
 
-    <!--
-   <nav>
-        <button class="filter" data-kategori="alle">Alle</button>
-        <button class="filter" data-kategori="Mercedes AMG">Mercedes AMG</button>
-        <button class="filter" data-kategori="Ferrari">Ferrari</button>
-        <button class="filter" data-kategori="Red Bull">Redbull</button>
-        <button class="filter" data-kategori="Mclaren">Mclaren</button>
-        <button class="filter" data-kategori="Renault">Renault</button>
-        <button class="filter" data-kategori="Alpha Tauri">Alpha Tauri</button>
-        <button class="filter" data-kategori="Racing Point">Racing Point</button>
-        <button class="filter" data-kategori="Alfa Romeo Racing">Alfa Romeo</button>
-        <button class="filter" data-kategori="Haas">Haas</button>
-        <button class="filter" data-kategori="Williams Racing">Williams</button>
-    </nav>
--->
+
+    <!--   Section hvori vi tilføjer vores templates. Rammen om vores loop-view -->
     <section id="data-container"></section>
 
+    <!--   Opbygning af hver enkelt kører i loopview-->
     <template>
         <article class="loop_view">
             <div class="justify">
@@ -93,40 +82,8 @@
         </article>
     </template>
 
-    <!--
-    <section id="detalje" class="hide">
-        <button id="detalje_close">X</button>
-        <article id="person_detalje">
 
-            <img class="driver" src="" alt="">
-
-            <div class="facts">
-                <img src="" alt="" class="profil-billede">
-                <h2 id="fornavn_detalje"></h2>
-                <h2 id="efternavn_detalje"></h2>
-                <img class="flag" src="" alt="">
-                <h3 class="kategori">Team</h3>
-
-                <h4 class="stats">Stats</h4>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-
-
-            <div class="bio_text">
-                <h4 class="bio">Bio</h4>
-                <p></p>
-            </div>
-
-        </article>
-    </section>
--->
-
+    <!--Struktur til pop-up vinudet-->
     <section id="detalje" class="hide">
         <button id="detalje_close">X</button>
         <article id="person_detalje">
@@ -170,4 +127,6 @@
 
 
     <script src="script.js"></script>
-</body></html>
+</body>
+
+</html>
