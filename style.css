@@ -236,6 +236,8 @@ h4 {
     cursor: pointer;
     justify-content: center;
     text-align: center;
+    margin-right: 10px;
+    border-radius: 20px;
 }
 
 #detalje img {
