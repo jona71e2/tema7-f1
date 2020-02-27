@@ -28,6 +28,7 @@ p {
     /*    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));*/
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 10px;
+    border-radius: 20px;
 }
 
 .logo {
@@ -101,10 +102,12 @@ article {
 }
 
 .flag {
-    object-fit: contain;
+    object-fit: cover;
     width: 70px;
     height: auto;
     margin: 5px 5px 0 0;
+    border: 1.5px black solid;
+    border-radius: 7px;
 
 }
 
@@ -345,7 +348,7 @@ li {
         display: grid;
         /*    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));*/
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        grid-gap: 10px;
+        grid-gap: 25px;
     }
 
 
@@ -431,7 +434,7 @@ li {
         display: grid;
         /*    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));*/
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        grid-gap: 10px;
+        grid-gap: 25px;
     }
 
 
