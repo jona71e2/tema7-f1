@@ -55,7 +55,7 @@
 
         //for hver person vi har i vores spreadsheet skal den indsætte relevante information i template, hvis de opfylder if statement
         personer.feed.entry.forEach(person => {
-            if (filter == "alle" || filter == person.gsx$kategori.$t) {
+            if (filter == "alle" || filter == person.gsx$kategori.$t || filter == person.gsx$land.$t) {
 
                 let klon = personerTemplate.cloneNode(true).content;
                 klon.querySelector("#fornavn").textContent = `${person.gsx$fornavn.$t}`;
