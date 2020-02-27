@@ -204,7 +204,8 @@ article h2 {
 
 
 article h3,
-h4 {
+h4,
+summary {
     font-size: 1.5rem;
     font-family: orbitron, sans-serif;
     font-weight: 500;
