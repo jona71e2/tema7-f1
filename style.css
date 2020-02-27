@@ -195,6 +195,12 @@ p {
         sans-serif;
 }
 
+.bio_text {
+    grid-column: 1/5;
+    margin: 0 2rem;
+
+}
+
 button {
     padding-bottom: 0;
     font-family: 'Ubuntu',
