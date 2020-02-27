@@ -91,7 +91,7 @@
         detalje.querySelector(".flag").src = "billeder/flag/" + person.gsx$land.$t + ".svg";
         detalje.querySelector("#fornavn_detalje").textContent = `${person.gsx$fornavn.$t}`;
         detalje.querySelector("#efternavn_detalje").textContent = `${person.gsx$efternavn.$t}`;
-        detalje.querySelector(".profil-billede").src = "billeder/drivers/" + person.gsx$billede.$t;
+        detalje.querySelector(".profil-billede").src = "billeder/drivers/" + person.gsx$billede.$t + ".svg";
         detalje.querySelector("h3").textContent = `${person.gsx$kategori.$t}`;
         detalje.querySelector("li").textContent = `Løb: ${person.gsx$starter.$t}`;
         detalje.querySelector("li:nth-child(2)").textContent = `Podier: ${person.gsx$podier.$t}`;
