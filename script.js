@@ -100,6 +100,9 @@
         detalje.querySelector("li:nth-child(5)").textContent = `VM: ${person.gsx$verdensmesterskaber.$t}`;
         detalje.querySelector("p").textContent = `${person.gsx$bio.$t}`;
 
+        detalje.querySelector("article").style.borderBottom = `solid 10px #${person.gsx$farver.$t}`;
+        detalje.querySelector("article").style.borderRight = `solid 10px #${person.gsx$farver.$t}`;
+
 
 
 
