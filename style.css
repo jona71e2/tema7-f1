@@ -261,14 +261,21 @@ h4 {
     width: 90%;
 }
 
+ul,
 li {
     list-style-type: none;
     font-family: kandin, sans-serif;
     font-weight: 900;
     font-style: normal;
+    text-align: left;
+    margin: 0;
+    padding: 0;
 }
 
+.stats {
+    text-align: left;
 
+}
 
 
 @media only screen and (max-width: 1200px) {
@@ -397,6 +404,7 @@ li {
     #detalje .bio_text {
         grid-column: 1/5;
         margin: 0 2rem;
+        text-align: left;
 
     }
 
