@@ -277,8 +277,7 @@ li {
 
 }
 
-.navbar a:hover,
-.dropdown:hover {
+.navbar button:hover {
     background-color: red;
 }
 
