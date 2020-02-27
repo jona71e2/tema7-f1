@@ -25,7 +25,6 @@ p {
     padding: 10px;
     background: #ececec;
     display: grid;
-    /*    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));*/
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 10px;
     border-radius: 20px;
@@ -41,16 +40,6 @@ p {
 
     max-width: 250px;
 }
-
-/*
-article {
-    border: 1px solid #000;
-    padding: 10px;
-    box-shadow: 0px 10px 15px 5px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    border-radius: 5%;
-}
-*/
 
 .loop_view {
     padding: 10px;
@@ -191,18 +180,6 @@ button {
 
 }
 
-/*
-article h2 {
-    font-family: orbitron, sans-serif;
-    font-weight: 900;
-    font-style: normal;
-    letter-spacing: .08rem;
-    font-size: 1.35rem;
-}
-*/
-
-
-
 article h3,
 h4,
 summary {
@@ -210,6 +187,7 @@ summary {
     font-family: orbitron, sans-serif;
     font-weight: 500;
     font-style: normal;
+    outline: none;
 }
 
 #detalje {
@@ -228,10 +206,6 @@ summary {
 
 #detalje article {
 
-    /*
-    margin: 0 6px;
-    padding: 2em 10em;
-*/
 
     background-color: white;
     cursor: pointer;
@@ -352,61 +326,6 @@ li {
 /*--------------------------------------------------NAV_BAR SLUUUUT*/
 
 
-@media only screen and (max-width: 1200px) {
-    /*
-    #detalje article {
-        margin: 0 6em;
-        padding: 2em 4em;
-    }
-*/
-
-
-
-}
-
-/*
-@media only screen and (max-width: 950px) {
-    #detalje article {
-        margin: 0 2em;
-        padding: 1em 1em;
-    }
-
-
-
-}
-*/
-
-
-/*
-@media only screen and (min-width: 1000px) {
-    #detalje article {
-        margin: 0 2em;
-        padding: 1em 1em;
-        display: flex;
-        flex-direction: row;
-    }
-
-    #detalje .driver {
-        flex-grow: 1;
-        flex-basis: 400px;
-    }
-
-    #detalje .facts {
-        flex-grow: 1;
-        flex-basis: 400px;
-    }
-
-    #detalje .bio_text {
-        flex-grow: 2;
-        min-width: 750px;
-    }
-
-
-
-
-}
-*/
-
 @media only screen and (min-width: 750px) {
     #data-container {
         max-width: 750px;
@@ -414,7 +333,6 @@ li {
         padding: 10px;
         background: #ececec;
         display: grid;
-        /*    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));*/
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         grid-gap: 25px;
     }
@@ -468,14 +386,6 @@ li {
 
     }
 
-    /*
-    #detalje .flag {
-        width: 20%;
-
-        grid-column: 4/5;
-    }
-*/
-
 
     #detalje .bio_text {
         grid-column: 1/5;
@@ -500,7 +410,6 @@ li {
         padding: 10px;
         background: #ececec;
         display: grid;
-        /*    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));*/
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         grid-gap: 25px;
     }
