@@ -15,13 +15,53 @@
 </head>
 
 <body>
-    <div>
-        <div class="logo">
-            <img src="logo/Logo.svg">
+
+    <div class="navbar">
+        <div>
+            <div class="logo">
+                <img src="logo/Logo.svg">
+            </div>
+        </div>
+        <div>
+            <button class="filter" data-kategori="alle">Alle</button>
+            <div class="dropdown">Teams▼
+                <div class="dropdown-content">
+                    <button class="filter" data-kategori="Mercedes AMG">Mercedes AMG</button>
+                    <button class="filter" data-kategori="Ferrari">Ferrari</button>
+                    <button class="filter" data-kategori="Red Bull">Redbull</button>
+                    <button class="filter" data-kategori="Mclaren">Mclaren</button>
+                    <button class="filter" data-kategori="Renault">Renault</button>
+                    <button class="filter" data-kategori="Alpha Tauri">Alpha Tauri</button>
+                    <button class="filter" data-kategori="Racing Point">Racing Point</button>
+                    <button class="filter" data-kategori="Alfa Romeo Racing">Alfa Romeo</button>
+                    <button class="filter" data-kategori="Haas">Haas</button>
+                    <button class="filter" data-kategori="Williams Racing">Williams</button>
+                </div>
+            </div>
+
+            <div class="dropdown">Lande▼
+                <div class="dropdown-content">
+                    <button class="filter" data-kategori="england">England</button>
+                    <button class="filter" data-kategori="finland">Finland</button>
+                    <button class="filter" data-kategori="tyskland">Tyskland</button>
+                    <button class="filter" data-kategori="Monaco">Monaco</button>
+                    <button class="filter" data-kategori="holland">Holland</button>
+                    <button class="filter" data-kategori="thailand">Thailand</button>
+                    <button class="filter" data-kategori="spanien">Spanien</button>
+                    <button class="filter" data-kategori="denmark">Denmark</button>
+                    <button class="filter" data-kategori="frankrig">Frankrig</button>
+                    <button class="filter" data-kategori="mexico">Mexico</button>
+                    <button class="filter" data-kategori="canada">Canada</button>
+                    <button class="filter" data-kategori="australia">Australia</button>
+                    <button class="filter" data-kategori="rusland">Rusland</button>
+                    <button class="filter" data-kategori="italien">Italien</button>
+                </div>
+            </div>
         </div>
     </div>
-    <h1>F1 Grid</h1>
-    <nav>
+
+    <!--
+   <nav>
         <button class="filter" data-kategori="alle">Alle</button>
         <button class="filter" data-kategori="Mercedes AMG">Mercedes AMG</button>
         <button class="filter" data-kategori="Ferrari">Ferrari</button>
@@ -34,6 +74,7 @@
         <button class="filter" data-kategori="Haas">Haas</button>
         <button class="filter" data-kategori="Williams Racing">Williams</button>
     </nav>
+-->
     <section id="data-container"></section>
 
     <template>
@@ -129,4 +170,6 @@
 
 
     <script src="script.js"></script>
-</body></html>
+</body>
+
+</html>
