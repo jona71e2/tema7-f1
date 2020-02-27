@@ -198,6 +198,7 @@ p {
 .bio_text {
     grid-column: 1/5;
     margin: 0 2rem;
+    text-align: left;
 
 }
 
@@ -268,12 +269,14 @@ li {
     font-weight: 900;
     font-style: normal;
     text-align: left;
-    margin: 0;
+    margin: 1rem;
     padding: 0;
+    font-size: 1.2rem;
 }
 
 .stats {
     text-align: left;
+    margin: 2rem;
 
 }
 
@@ -390,7 +393,7 @@ li {
     #detalje .facts {
         grid-column: 2/3;
         grid-row: 1/2;
-        margin-top: 25vh;
+        margin-top: 20vh;
 
     }
 
